@@ -1,3 +1,6 @@
+body{
+    margin-top: 5rem;
+}
 /*MENU*/
 nav{
     position: fixed;
@@ -15,15 +18,22 @@ nav div{
 
 }
 nav .logo{
-
+    height: 5rem;
+    margin: 0.8rem 0rem;
+}
+.logo img{
+    height: 100%;
 }
 nav .enlaces{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+.enlaces a{
+    margin: 1rem 2rem;
+    text-decoration: none;
+}
 nav .formulario form{
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
@@ -39,3 +49,44 @@ nav .formulario form{
     padding: 0px;
 }
 /*SECCION IMAGENES*/
+#imagenes{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#imagenes div{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 16%;
+    min-width: 150px;
+}
+#imagenes div img{
+    width: 100%;
+}
+#imagenes div p{
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+/*SECCION TABLA*/
+table{
+    margin: 3rem auto;
+    border-collapse: collapse;
+    width: 75%;
+}
+th,td,tr{
+    border: 1px solid black;
+}
+th,td{
+    width: 16%;
+}
+td img{
+    width: 100%;
+    object-fit: cover;
+}
