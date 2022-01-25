@@ -58,6 +58,8 @@ nav .formulario form{
     flex-wrap: wrap;
 }
 #imagenes div{
+    margin-top: 1rem;
+    max-height: 300px;
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
