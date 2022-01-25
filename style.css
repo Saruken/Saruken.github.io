@@ -1,5 +1,5 @@
 body{
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 /*MENU*/
 nav{
@@ -13,6 +13,7 @@ nav{
     background-color: gray;
     border-bottom: 3px solid indianred;
     align-items: center;
+    z-index: 5;
 }
 nav div{
 
@@ -66,8 +67,12 @@ nav .formulario form{
 }
 #imagenes div img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #imagenes div p{
+    z-index: 1;
+    align-self: flex-end;
     width: 100%;
     text-align: center;
     margin: 0%;
@@ -79,6 +84,10 @@ table{
     margin: 3rem auto;
     border-collapse: collapse;
     width: 75%;
+    overflow-x: scroll;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 th,td,tr{
     border: 1px solid black;
@@ -86,7 +95,12 @@ th,td,tr{
 th,td{
     width: 16%;
 }
-td img{
+td.tabla_img{
+    padding: 0px;
+    line-height: 0px;
+}
+td.tabla_img img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
