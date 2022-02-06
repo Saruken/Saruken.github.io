@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <!--MENU-->
-    <nav>
+    <header>
         <div class="logo">
             <img src="img/logo.png" alt="logo">
         </div>
-        <div class="enlaces">
-            <a href="" target="_blank">Banda del Sombrero de Paja</a>
-            <a href="" target="_blank">Tabla Tripulación</a>
-            <a href="" target="_blank">Luffy</a>
-        </div>
-        <div class="formulario">
+        <nav>
+            <div class="enlaces">
+                <a href="#seccion1">Banda del Sombrero de Paja</a>
+                <a href="#tabla">Tabla Tripulación</a>
+                <a href="">Luffy</a>
+            </div>
+        </nav>
             <form action="">
                 <div>
                     <label for="usuario">Usuario:</label>
@@ -30,168 +36,235 @@
                 </div>
                 <button type="submit">Entrar</button>
             </form>
-        </div>
-    </nav>
+    </header>
     <!--SECCION IMAGENES-->
-    <div id="imagenes">
-        <div>
-            <img src="img/luffy.jpg" alt="">
-            <p>Luffy</p>
+    <main>
+        <div id="seccion1">
+            <h2>Banda del Sombrero de Paja</h2>
+            <div class="imagenes">
+                <div>
+                    <img src="img/luffy.jpg" alt="Luffy">
+                    <p>Luffy</p>
+                </div>
+                <div>
+                    <img src="img/zoro.jpg" alt="Zoro">
+                    <p>Zoro</p>
+                </div>
+                <div>
+                    <img src="img/nami.webp" alt="Nami">
+                    <p>Nami</p>
+                </div>
+                <div>
+                    <img src="img/usopp.jpg" alt="Usopp">
+                    <p>Usopp</p>
+                </div>
+                <div>
+                    <img src="img/sanji.jpg" alt="Sanji">
+                    <p>Sanji</p>
+                </div>
+                <div>
+                    <img src="img/chopper.jpg" alt="Chopper">
+                    <p>Chopper</p>
+                </div>
+                <div>
+                    <img src="img/robin.jpg" alt="Robin">
+                    <p>Robin</p>
+                </div>
+                <div>
+                    <img src="img/franky.jpg" alt="Franky">
+                    <p>Franky</p>
+                </div>
+                <div>
+                    <img src="img/brook.webp" alt="Brook">
+                    <p>Brook</p>
+                </div>
+                <div>
+                    <img src="img/jinbei.jpg" alt="Jinbe">
+                    <p>Jinbe</p>
+                </div>
+                <div>
+                    <img src="img/Ace.PNG" alt="Ace">
+                    <p>Ace</p>
+                </div>
+                <div>
+                    <img src="img/sabo.png" alt="Sabo">
+                    <p>Sabo</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="img/zoro.jpg" alt="">
-            <p>Zoro</p>
+        <div id="tabla">
+            <h2>Tripulación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apodo</th>
+                        <th>Posicion</th>
+                        <th>Habilidad/Poder</th>
+                        <th>Recompensa</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monkey D. Luffy</td>
+                        <td>Sombrero de Paja</td>
+                        <td>Capitán</td>
+                        <td>Fruta Gomu Gomu</td>
+                        <td>
+                            <div>
+                                <p>1.500.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/luffy.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Roronoa Zoro</td>
+                        <td>Cazador de Piratas</td>
+                        <td>Espadachín</td>
+                        <td>Estilo de 3 Espadas</td>
+                        <td>
+                            <div>
+                                <p>320.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/zoro.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Nami</td>
+                        <td>Gata Ladrona</td>
+                        <td>Navegante</td>
+                        <td>Clima-Tact</td>
+                        <td>
+                            <div>
+                                <p>66.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/nami.webp" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Usopp</td>
+                        <td>Dios Usopp</td>
+                        <td>Francotirador</td>
+                        <td>Kabuto Negro y Pop Green</td>
+                        <td>
+                            <div>
+                                <p>200.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/usopp.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Vinsmoke Sanji</td>
+                        <td>Pierna Negra</td>
+                        <td>Cocinero</td>
+                        <td>Estilo Pierna Negra</td>
+                        <td>
+                            <div>
+                                <p>330.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/sanji.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Tony Tony Chopper</td>
+                        <td>Amante del Algodón de Azúcar</td>
+                        <td>Médico</td>
+                        <td>Fruta Hito Hito</td>
+                        <td>
+                            <div>
+                                <p>100</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/chopper.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Nico Robin</td>
+                        <td>Niña Demonio</td>
+                        <td>Arqueóloga</td>
+                        <td>Fruta Hana Hana</td>
+                        <td>
+                            <div>
+                                <p>130.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/robin.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Franky</td>
+                        <td>Cyborg</td>
+                        <td>Carpintero Naval</td>
+                        <td>Cuerpo Mecánico</td>
+                        <td>
+                            <div>
+                                <p>94.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/franky.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Brook</td>
+                        <td>Soul King</td>
+                        <td>Músico</td>
+                        <td>Fruta Yomi Yomi</td>
+                        <td>
+                            <div>
+                                <p>83.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/brook.webp" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Jinbe</td>
+                        <td>Caballero del Mar</td>
+                        <td>Timonel</td>
+                        <td>Karate & Jujutsu Gyojin</td>
+                        <td>
+                            <div>
+                                <p>438.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/jinbei.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Portgas D. Ace</td>
+                        <td>Ace Puño de Fuego</td>
+                        <td>Comandante de la 2º División de los Piratas de Barbablanca</td>
+                        <td>Fruta Mera Mera</td>
+                        <td>
+                            <div>
+                                <p>550.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/Ace.PNG" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sabo</td>
+                        <td>Lucy</td>
+                        <td>2º del Ejército Revolucionario</td>
+                        <td>Ryusoken & Fruta Mera Mera</td>
+                        <td>
+                            <div>
+                                <p>602.000.000</p>
+                                <img src="img/Beli.png" alt="beli">
+                            </div>
+                        </td>
+                        <td class="tabla_img"><img src="img/sabo.png" alt="Sabo"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div>
-            <img src="img/nami.webp" alt="">
-            <p>Nami</p>
-        </div>
-        <div>
-            <img src="img/usopp.jpg" alt="">
-            <p>Usopp</p>
-        </div>
-        <div>
-            <img src="img/sanji.jpg" alt="">
-            <p>Sanji</p>
-        </div>
-        <div>
-            <img src="img/chopper.jpg" alt="">
-            <p>Chopper</p>
-        </div>
-        <div>
-            <img src="img/robin.jpg" alt="">
-            <p>Robin</p>
-        </div>
-        <div>
-            <img src="img/franky.jpg" alt="">
-            <p>Franky</p>
-        </div>
-        <div>
-            <img src="img/brook.webp" alt="">
-            <p>Brook</p>
-        </div>
-        <div>
-            <img src="img/jinbei.jpg" alt="">
-            <p>jinbe</p>
-        </div>
-        <div>
-            <img src="img/images.jpg" alt="">
-            <p>imagen</p>
-        </div>
-        <div>
-            <img src="img/images.jpg" alt="">
-            <p>imagen</p>
-        </div>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apodo</th>
-                <th>Posicion</th>
-                <th>Habilidad/Poder</th>
-                <th>Recompensa</th>
-                <th>Imagen</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monkey D. Luffy</td>
-                <td>Sombrero de Paja</td>
-                <td>Capitán</td>
-                <td>Fruta Gomu Gomu</td>
-                <td>1.500.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/luffy.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Roronoa Zoro</td>
-                <td>Cazador de Piratas</td>
-                <td>Espadachín</td>
-                <td>Estilo de 3 Espadas</td>
-                <td>320.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/zoro.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Nami</td>
-                <td>Gata Ladrona</td>
-                <td>Navegante</td>
-                <td>Clima-Tact</td>
-                <td>66.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/nami.webp" alt=""></td>
-            </tr>
-            <tr>
-                <td>Usopp</td>
-                <td>Dios Usopp</td>
-                <td>Francotirador</td>
-                <td>Kabuto Negro y Pop Green</td>
-                <td>200.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/usopp.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Vinsmoke Sanji</td>
-                <td>Pierna Negra</td>
-                <td>Cocinero</td>
-                <td>Estilo Pierna Negra</td>
-                <td>330.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/sanji.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Tony Tony Chopper</td>
-                <td>Amante del Algodón de Azúcar</td>
-                <td>Médico</td>
-                <td>Fruta Hito Hito</td>
-                <td>100<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/chopper.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Nico Robin</td>
-                <td>Niña Demonio</td>
-                <td>Arqueóloga</td>
-                <td>Fruta Hana Hana</td>
-                <td>130.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/robin.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Franky</td>
-                <td>Cyborg</td>
-                <td>Carpintero Naval</td>
-                <td>Cuerpo Mecánico</td>
-                <td>94.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/franky.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td>Brook</td>
-                <td>Soul King</td>
-                <td>Músico</td>
-                <td>Fruta Yomi Yomi</td>
-                <td>83.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/brook.webp" alt=""></td>
-            </tr>
-            <tr>
-                <td>Jinbe</td>
-                <td>Caballero del Mar</td>
-                <td>Timonel</td>
-                <td>Karate & Jujutsu Gyojin</td>
-                <td>438.000.000<img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/jinbei.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/images.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><img src="img/Beli.png" alt="beli"></td>
-                <td class="tabla_img"><img src="img/images.jpg" alt=""></td>
-            </tr>
-        </tbody>
-    </table>
+    </main>
 </body>
 </html>

@@ -1,24 +1,28 @@
 body{
-    margin-top: 8rem;
+    background-color: lightslategray;
+    margin: 0%;
+}
+main{
+    width: 75%;
+    margin: auto;
+}
+form,h1,h2,h3{
+    font-family: 'Texturina', serif;
 }
 /*MENU*/
-nav{
-    position: fixed;
+header{
     width: 100%;
-    top: 0px;
-    left: 0px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: gray;
-    border-bottom: 3px solid indianred;
+    background-color: black;
+    background-color: rgb(194, 161, 16);
+    border-bottom: 5px solid black;
     align-items: center;
     z-index: 5;
+    padding-bottom: 0.5rem;
 }
-nav div{
-
-}
-nav .logo{
+header .logo{
     height: 5rem;
     margin: 0.8rem 0rem;
 }
@@ -29,35 +33,50 @@ nav .enlaces{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    text-align: center;
 }
 .enlaces a{
-    margin: 1rem 2rem;
+    font-family: 'Texturina', serif;
+    color: black;
+    margin: 1rem 0rem;
     text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
-nav .formulario form{
+.enlaces a:hover{
+    color: rgb(194, 161, 16);
+    background-color: black;
+    font-size: 1.8rem;
+}
+form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
-.formulario div{
+form div{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 0.25rem;
 }
-.formulario button{
+label{
+    padding-right: 1rem;
+}
+button{
     width: 100%;
     padding: 0px;
 }
 /*SECCION IMAGENES*/
-#imagenes{
+h2{
+    margin: 0%;
+}
+.imagenes{
     margin: auto;
-    width: 75%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-#imagenes div{
+.imagenes div{
     margin-top: 1rem;
     max-height: 300px;
     align-items: flex-start;
@@ -67,12 +86,13 @@ nav .formulario form{
     max-width: 16%;
     min-width: 150px;
 }
-#imagenes div img{
+.imagenes div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#imagenes div p{
+.imagenes div p{
+    padding: 0.3rem;
     z-index: 1;
     align-self: flex-end;
     width: 100%;
@@ -82,20 +102,45 @@ nav .formulario form{
     color: white;
 }
 /*SECCION TABLA*/
+#tabla{
+    margin-top: 3rem;
+}
 table{
-    margin: 3rem auto;
+    margin: 1rem auto;
     border-collapse: collapse;
-    width: 75%;
-    overflow-x: scroll;
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+    text-align: center;
+    font-size: 1.1rem;
 }
-th,td,tr{
+thead{
+    background-color: black;
+    color: rgb(194, 161, 16);
+}
+td,tr{
     border: 1px solid black;
 }
 th,td{
     width: 16%;
+}
+th:nth-child(n+2){
+    padding: 0.7rem;
+    border-left: 1px solid rgb(128, 125, 125);
+}
+tbody tr:nth-child(2n){
+    background-color: rgb(206, 180, 65);
+}
+tbody tr:nth-child(2n+1){
+    background-color: rgb(187, 186, 186);
+}
+thead,tbody tr td:first-child{
+    font-family: 'Texturina', serif;
+    font-size: 1.4rem;
+}
+td div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 td.tabla_img{
     padding: 0px;
