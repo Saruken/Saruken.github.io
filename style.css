@@ -47,7 +47,6 @@ nav .enlaces{
 .enlaces a:hover{
     color: rgb(194, 161, 16);
     background-color: black;
-    font-size: 1.8rem;
 }
 form{
     display: flex;
@@ -160,6 +159,9 @@ td.tabla_img img{
 .texto{
     width: 80%;
     padding-right: 0.5rem;
+}
+.texto img{
+    height: 1rem;
 }
 figure{
     width: 20%;
