@@ -180,4 +180,5 @@ details>div{
 }
 summary{
     font-family: 'Texturina', serif;
+    cursor: pointer;
 }
